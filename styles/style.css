@@ -20,9 +20,12 @@
   font-family: var(--main-font, sans-serif);
   background-color: var(--bg-color);
   color: var(--accent-color);
+  background-image: var(--gradient-main);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-@supports (font-variation-settings: normal) {
+@supports (font-variation-settings: wght) {
   .page {
       font-weight: 400;
   }
