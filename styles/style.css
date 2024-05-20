@@ -111,3 +111,37 @@
   inline-size: 16px;
   block-size: 13px;
 }
+
+.card_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 4px 10px;
+}
+
+.image-group {
+  position: relative;
+}
+
+.content__picture {
+  background-size: cover;
+  background-position: center;
+  inline-size: 100%;
+}
+
+.card_label {
+  position: absolute;
+  z-index: 1;
+  right: 13px;
+  top: 25px;
+  font-family: var(--accent-font);
+  color: var(--accent-color);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  text-shadow:
+    -1px 0 var(--bg-color), 
+   0 1px var(--bg-color), 
+   1px 0 var(--bg-color), 
+   0 -1px var(--bg-color);
+
+}
