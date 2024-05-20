@@ -31,13 +31,7 @@
   }
 }
 
-.card {
-  margin: auto;
-  inline-size: clamp(371px, 100%, 700px);
-  background-color: var(--bg-color);
-  border: 2px solid var(--accent-color);
-  
-}
+
 
 .header {
   max-inline-size: 100%;
@@ -49,6 +43,8 @@
   margin-bottom: 100px;
   font-weight: 400;
   font-family: var(--accent-font);
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
 }
 
 .header__logo {
@@ -112,21 +108,42 @@
   block-size: 13px;
 }
 
+.main__content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  margin: auto;
+  inline-size: clamp(375px, 100%, 700px);
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  padding-block-end: 25px;
+}
+
 .card_title {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  margin: 4px 10px;
+  margin: 5px 10px 4px;
 }
 
 .image-group {
   position: relative;
+  margin: 0;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .content__picture {
+  display: block;
   background-size: cover;
   background-position: center;
   inline-size: 100%;
+  /* border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color); */
+
 }
 
 .card_label {
@@ -136,12 +153,65 @@
   top: 25px;
   font-family: var(--accent-font);
   color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow:
-    -1px 0 var(--bg-color), 
-   0 1px var(--bg-color), 
-   1px 0 var(--bg-color), 
-   0 -1px var(--bg-color);
+  text-shadow: var(--text-shadow)
+}
 
+ @supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
+  .card_label {
+      -webkit-text-stroke: 1px var(--bg-color);
+      text-stroke: 1px var(--bg-color);
+      text-shadow: none;
+  }
+}  
+
+.paragraph-group {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px;
+}
+
+.text-paragraph {
+  font-size: 18px;
+line-height: 21px;
+font-weight: var(--main-font-weight);
+}
+
+.button_group {
+  display: flex;
+  gap: 12px;
+  padding-inline-end: 25px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card__icon-button {
+  border: none;
+  background-color: transparent;
+  inline-size: 39px;
+  block-size: 36px;
+}
+
+.card__like-button {
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  inline-size: 130px;
+  block-size: 38px;
+  padding: 0;
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 12.6px;
 }

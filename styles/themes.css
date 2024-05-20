@@ -15,6 +15,11 @@
     --vertical-gradient: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px);
     --saturated-gradient:  linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
     --gradient-main: var(--horizontal-gradient), var(--vertical-gradient), var(--saturated-gradient);
+    --text-shadow:  -1px 0 var(--bg-color), 
+        0 1px var(--bg-color), 
+        1px 0 var(--bg-color), 
+        0 -1px var(--bg-color);
+     --fill-contour: #000000;
 } 
 
 :root.theme-dark {
@@ -26,6 +31,11 @@
     --vertical-gradient: repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px);
     --saturated-gradient:  linear-gradient(to bottom, #007f0c, #004306);
     --gradient-main: var(--horizontal-gradient), var(--vertical-gradient), var(--saturated-gradient);
+    --text-shadow:  -1px 0 var(--bg-color), 
+        0 1px var(--bg-color), 
+        1px 0 var(--bg-color), 
+        0 -1px var(--bg-color);
+        --fill-contour: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,5 +48,10 @@
     --vertical-gradient: repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px);
     --saturated-gradient:  linear-gradient(to bottom, #007f0c, #004306);
     --gradient-main: var(--horizontal-gradient), var(--vertical-gradient), var(--saturated-gradient);
+    --text-shadow:  -1px 0 var(--bg-color), 
+        0 1px var(--bg-color), 
+        1px 0 var(--bg-color), 
+        0 -1px var(--bg-color);
+        --fill-contour: #00CC14;
         }
     }
