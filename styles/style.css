@@ -220,3 +220,28 @@ font-weight: var(--main-font-weight);
   filter: saturate(30%);
 }
 
+
+.footer {
+  margin: 54px 34px 102px;
+}
+
+.floppy-icon {
+  inline-size: 28px;
+  block-size: 28px;
+  color: var(--accent-color);
+}
+
+.save_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--bg-color);
+  margin-block-start: 52px;
+  margin-block-end: 100px;
+  border: 2px solid var(--accent-color);
+  inline-size: clamp(19.125rem, 18.487rem + 2.72vw, 20.938rem);
+  padding: 15px 20px;
+}
+
