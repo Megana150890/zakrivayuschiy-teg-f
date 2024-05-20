@@ -39,3 +39,4 @@
     --saturated-gradient:  linear-gradient(to bottom, #007f0c, #004306);
     --gradient-main: var(--horizontal-gradient), var(--vertical-gradient), var(--saturated-gradient);
         }
+    }
