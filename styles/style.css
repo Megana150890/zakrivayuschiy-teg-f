@@ -82,10 +82,11 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 11px;
 }
 
 .theme-menu__button {
+  position: relative;
   font-family: 'PressStart2P';
   font-size: 14px;
   line-height: 1;
@@ -97,3 +98,16 @@
   cursor: pointer;
 }
 
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  display: block;
+  position: absolute;
+  margin-block-start: 0;
+  margin-inline-start: -19px;
+  inline-size: 16px;
+  block-size: 13px;
+}
