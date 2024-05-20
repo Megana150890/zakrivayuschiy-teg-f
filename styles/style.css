@@ -72,7 +72,7 @@
 }
 
 .header__theme-menu {
-  margin: 25px auto;
+  margin: 25px 133px 25px 154px;
 }
 
 .theme-menu__list {
@@ -215,3 +215,8 @@ font-weight: var(--main-font-weight);
   font-size: 14px;
   line-height: 12.6px;
 }
+
+.saturate {
+  filter: saturate(30%);
+}
+
