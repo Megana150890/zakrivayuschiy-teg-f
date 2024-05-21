@@ -99,6 +99,17 @@
 
 .theme-menu__button:disabled {
   opacity: 0.6;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: 0.3s ease;
+}
+
+.theme-menu__button:focus-visible {
+  
 }
 
 .theme-menu__button:disabled::before {
