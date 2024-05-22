@@ -95,6 +95,21 @@
   padding: 0;
   font-style: normal;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  display: block;
+  background-color: currentColor;
+  inline-size: 100%;
+  block-size: 2px;
+  scale: 0;
+  transform-origin: left;
+  transition: scale 0.3s ease;
 }
 
 .theme-menu__button:disabled {
@@ -108,8 +123,19 @@
   transition: 0.3s ease;
 }
 
+.theme-menu__button:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
 .theme-menu__button:focus-visible {
-  
+  opacity: 0.6;
+ outline: none;
+}
+
+.theme-menu__button:focus-visible::after {
+  scale: 1;
+  outline: none;
 }
 
 .theme-menu__button:disabled::before {
