@@ -15,4 +15,7 @@
 1px 0 var(--bg-color), 
 0 -1px var(--bg-color);
 --fill-contour: #000000;
+--color-button: #FFFFFF;
+--color-sparks: #FF0000;
+--color-heart: #000000;
 }

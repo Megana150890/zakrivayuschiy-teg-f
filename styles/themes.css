@@ -20,6 +20,10 @@
         1px 0 var(--bg-color), 
         0 -1px var(--bg-color);
      --fill-contour: #000000;
+     --color-button: #FFFFFF;
+     --color-sparks: #FF0000;
+     --color-heart: #000000;
+
 } 
 
 :root.theme-dark {
@@ -35,7 +39,10 @@
         0 1px var(--bg-color), 
         1px 0 var(--bg-color), 
         0 -1px var(--bg-color);
-        --fill-contour: #00CC14;
+    --fill-contour: #00CC14;
+    --color-button: #00CC14;
+    --color-sparks: #FF0000;
+    --color-heart: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,5 +60,7 @@
         1px 0 var(--bg-color), 
         0 -1px var(--bg-color);
         --fill-contour: #00CC14;
+        --color-button: #00CC14;
+        --color-sparks: #FF0000;
         }
     }

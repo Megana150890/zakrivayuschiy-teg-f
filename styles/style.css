@@ -225,17 +225,36 @@ font-weight: var(--main-font-weight);
 
 .button_group {
   display: flex;
-  gap: 12px;
+  gap: 7px;
   padding-inline-end: 25px;
   align-items: center;
   justify-content: flex-end;
 }
 
+
+
 .card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background-color: transparent;
-  inline-size: 39px;
-  block-size: 36px;
+  padding: 0px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+  transition: 0.3s ease;
+
+}
+
+.like-icon {
+  /* inline-size: 34px;
+  block-size: 36px; */
 }
 
 .card__like-button {
@@ -254,6 +273,10 @@ font-weight: var(--main-font-weight);
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 12.6px;
+  mix-blend-mode: difference;
+  color: var(--color-button);
+  position: relative;
+  z-index: 2;
 }
 
 .saturate {
@@ -270,7 +293,8 @@ font-weight: var(--main-font-weight);
 .floppy-icon {
   inline-size: 21px;
   block-size: 21px;
-  color: var(--accent-color);
+  mix-blend-mode: difference;
+  color: var(--color-button);
 }
 
 .footer__button {
@@ -320,6 +344,55 @@ transition:  0.5s ease-in-out;
 .footer__button:hover::before {
   transform: scaleX(1);
 }
+
+.card__icon-button:hover {
+  cursor: pointer;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+/* .sparks {
+  fill: var(--color-sparks);
+} */
+
+
+.core {
+  fill: transparent;
+  transition:  fill 0.3s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition:  fill 0.3s linear;
+}
+
+
+.like-icon:hover .core {
+fill: var(--accent-color);
+transition:  fill 0.3s linear 0.3s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color);
+  transition:  fill 0.3s  linear 0.5s;
+}
+
+.like-icon:active .core {
+  fill: var(--color-sparks);
+  transition:  fill 0.3s linear 0.3s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--color-sparks);
+  transition:  fill 0.3s linear 0.5s;
+}
+
 
 @media (width <= 375px) {
   .footer__button {
