@@ -380,6 +380,7 @@ transition:  0.5s ease-in-out;
 
 .floppy-save-icon {
   min-width: 39px;
+  color: var(--accent-color);
 }
 
 .dialog {
@@ -387,6 +388,8 @@ transition:  0.5s ease-in-out;
   max-width: 357px;
   position: fixed;
   inset: 0;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
 }
 
 .dialog_content {
@@ -404,6 +407,7 @@ transition:  0.5s ease-in-out;
   border: 2px solid var(--accent-color);
   text-transform: uppercase;
   line-height: 12.6px;
+  color: var(--accent-color);
 }
 
 .dialog-text {
@@ -411,6 +415,7 @@ transition:  0.5s ease-in-out;
   size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: var(--accent-color);
 }
 
 dialog::backdrop {
