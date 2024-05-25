@@ -26,22 +26,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-variation-settings: "wght" var(--normal-weight);
 }
 
-@supports (font-variation-settings: wght) {
-  .page {
-      font-weight: 400;
-  }
-}
-
-
-
+  
 .header {
   max-inline-size: 100%;
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: center;
   margin-top: 100px;
   margin-bottom: 100px;
   font-weight: 400;
@@ -53,7 +46,11 @@
 
 .header__logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .header__logo_text {
   display: block;
@@ -69,13 +66,17 @@
   font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem);
   font-weight: 400;
   line-height: 1;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   margin-top: 20px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
+
 .header__theme-menu {
-  margin: 25px auto;
+  padding: 25px 0px;
+  margin-inline-start: clamp(9.625rem, 6.082rem + 15.117vw, 19.688rem);
 }
 
 .theme-menu__list {
@@ -87,7 +88,8 @@
 
 .theme-menu__button {
   position: relative;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
@@ -165,7 +167,7 @@
 }
 
 .card_title {
-  font-weight: 700;
+  font-variation-settings: "wght" var(--bold-weight);
   font-size: 18px;
   line-height: 22px;
   margin: 5px 10px 4px;
@@ -195,7 +197,7 @@
   z-index: 1;
   right: clamp(0.813rem, 0.548rem + 1.13vw, 1.563rem);
   top: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   color: var(--accent-color);
   font-weight: 400;
   font-size: 14px;
@@ -223,7 +225,7 @@
 .text-paragraph {
   font-size: 18px;
 line-height: 21px;
-font-weight: var(--main-font-weight);
+font-variation-settings: "wght" var(--normal-weight);
 }
 
 .button_group {
@@ -267,7 +269,7 @@ font-weight: var(--main-font-weight);
 }
 
 .button__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 12.6px;
   mix-blend-mode: difference;
@@ -328,7 +330,7 @@ font-weight: var(--main-font-weight);
 .main-button {
   outline: none;
   position: relative;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   text-align: center;
@@ -408,11 +410,12 @@ transition:  0.5s ease-in-out;
   text-transform: uppercase;
   line-height: 12.6px;
   color: var(--accent-color);
+  font-size: 14px;
 }
 
 .dialog-text {
-  font-family: var(--accent-font);
-  size: 14px;
+  font-family: var(--accent-font), fantasy;
+  font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -424,6 +427,11 @@ dialog::backdrop {
 
 
 @media (width <= 375px) {
+
+  .header__theme-menu {
+    
+  }
+  
   .save__button {
     flex-direction: column;
   }
@@ -434,7 +442,7 @@ dialog::backdrop {
   }
 
   .dialog {
-    padding: 30px 42px;
+    /* padding: 30px 42px; */
     max-width: 341px;
   }
 }

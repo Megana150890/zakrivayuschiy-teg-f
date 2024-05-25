@@ -2,8 +2,6 @@
 :root {
 --main-font: "Inter", sans-serif;
 --accent-font: "PressStart2P", fantasy;
---main-font-weight: 400;
---heading-font-weight: 700;
 --bg-color: #FFFFFF;
 --accent-color: #000000;
 --horizontal-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px);
@@ -18,5 +16,6 @@
 --color-button: #FFFFFF;
 --color-sparks: #FF0000;
 --color-heart: #000000;
-/* --color-sparks-tranparent: rgb(255 0 0 / 0%); */
+--bold-weight: 700;
+--normal-weight: 400;
 }

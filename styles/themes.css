@@ -7,8 +7,6 @@
 
 
 :root.theme-light {
-    --main-font-weight: 400;
-    --heading-font-weight: 700;
     --bg-color: #FFFFFF;
     --accent-color: #000000;
     --horizontal-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px);
@@ -23,12 +21,12 @@
      --color-button: #FFFFFF;
      --color-sparks: #FF0000;
      --color-heart: #000000;
+     --bold-weight: 700;
+     --normal-weight: 400;
 
 } 
 
 :root.theme-dark {
-    --main-font-weight: 465;
-    --heading-font-weight: 785;
     --bg-color: #000000;
     --accent-color: #00CC14;
     --horizontal-gradient: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px);
@@ -43,12 +41,12 @@
     --color-button: #00CC14;
     --color-sparks: #FF0000;
     --color-heart: #000000;
+    --bold-weight: 785;
+    --normal-weight: 465;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --main-font-weight: 465;
-    --heading-font-weight: 785;
     --bg-color: #000000;
     --accent-color: #00CC14;
     --horizontal-gradient: repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px);
@@ -62,5 +60,7 @@
         --fill-contour: #00CC14;
         --color-button: #00CC14;
         --color-sparks: #FF0000;
+        --bold-weight: 785;
+        --normal-weight: 465;
         }
     }
