@@ -272,32 +272,23 @@
   z-index: 2;
 }
 
+.content__picture {
+  inline-size: 100%;
+  background-size: cover;
+  block-size: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
+}
+
+.normal {
+  inline-size: 100%;
+  background-size: cover;
+}
+
 .saturate {
   filter: saturate(30%);
 }
 
 .brightness {
-  filter: contrast(2) brightness(200%);
-}
-
-.hue {
-  filter: hue-rotate(30deg);
-}
-
-.invert {
-  filter: invert(0.8);
-}
-
-.sepia {
-  filter: sepia(0.9);
-}
-
-.blur {
-  filter: blur(10px);
-}
-
-.mix-filter {
-  filter: hue-rotate(90deg) saturate(90%) brightness(120%) opacity(0.7);
+  filter: contrast(1.5);
 }
 
 .save {
